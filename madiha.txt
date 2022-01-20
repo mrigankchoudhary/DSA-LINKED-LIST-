@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.content {
+  position: relative;
+  top: -32rem;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 33px;
+  line-height: 45px;
+  text-align: left;
+}
+
+.heading {
+  height: 67px;
+  width: 100%;
+  font-family: "Glory", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 60.95px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 91px;
+  color: #8b231c;
+}
+
+#line {
+  width: 436.5px;
+  margin-top: 4rem;
+  align-items: center;
+  border: 4px solid #f9a628;
+}
+
+.body {
+  width: 80rem;
+  height: 535px;
+}
+
+---------------------------------------------------------------------------------------
+import React from 'react'
+import './About.css'
+import Background from './asset/gdsc.svg'
+
+const About = () => {
+  return (
+    <>
+      <div className="container">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,100&family=Poppins&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+        </style>
+        <div className="head">
+          <h1 className="heading">About</h1>
+          <hr id="line" ></hr>
+        </div>
+      </div>
+      <div className="container1">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,100&family=Poppins&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+        </style>
+        <img src={Background} style={{marginBottom:"4rem"}} height="600" alt="gdse" />
+        <p className="content">The Developer Students Club - CIEM brings to you Synthax 2.0, an open-source program to introduce students to the world of open-source development and demonstrate the power of real-time unified problem-solving. The projects that we will be hosting have been hand-picked to inspire creative thinking and collaboration among all participants.</p>
+      </div>
+    </>
+  )
+}
+
+export default About
